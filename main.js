@@ -1,1 +1,1 @@
-const banner = document.getElementById("banner");
+console.log("TEST");
