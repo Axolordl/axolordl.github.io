@@ -1,3 +1,23 @@
+function getHostFromUrl(url) {
+    try {
+        const urlObject = new URL(url);
+        return urlObject.hostname;
+    } catch (error) {
+        console.error('Invalid URL:', url);
+        return null;
+    }
+}
+
+// Example usage:
+const url = 'https://www.example.com/path/to/page';
+const host = getHostFromUrl(url);
+
+if (host) {
+    console.log('Host:', host);
+} else {
+    console.log('Failed to extract host from URL.');
+}
+
 console.log("TEST");
 
 // Array of Pokémon types since Generation 6
